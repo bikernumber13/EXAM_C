@@ -1,22 +1,21 @@
 #include <unistd.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 void	ft_putchar(char c)
 {
 		write(1, &c, 1);
 }
 
-void	*ft_solve(char *str)
+void	ft_solve(char *str)
 {
-	int				i;
-	int				j;
-	unsigned char	*ptr;
+	int		i;
+	int		j;
+	char	*ptr;
 
 	i = 0;
 	j = 0;
 	if (!(ptr = (char *)malloc(sizeof(*ptr) * 2048)))
-		return (NULL);
+		return ;
 	while (i < 2048)
 		ptr[i++] = 0;
 	i = 0;
